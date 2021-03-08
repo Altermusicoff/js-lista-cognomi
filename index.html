@@ -21,10 +21,9 @@
     var insertSurname = prompt('Insert your surname:');
     surname.push(insertSurname);
     surname.sort();
-    var index;
     for (var i = 0; i < surname.length; i++) {
       if (surname[i] == insertSurname) {
-        let index = i + 1; // posizione umana
+        var index = i + 1; // posizione umana
       }
       console.log(surname[i]);
     }
