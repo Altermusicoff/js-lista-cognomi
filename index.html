@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lista Cognomi</title>
+  </head>
+  <body>
+    <div class="container">
+    </div>
+    <script>
+
+    // REPO: js-lista-cognomi
+    // GOAL:
+    // Chiedere all'utente il suo cognome e inserirlo in un array non ordinato.
+    // Riordinare l'array e stampare la lista dei cognomi in ordine alfabetico e la posizione "umana" (partendo da 1) del cognome dell'utente.
+    // NOTA
+    // Ci sono almeno un paio di funzioni del js che possono tornarvi utili, ma non le abbiamo viste...dovrete cercarle voi!!
+
+    var surname = ["Banana", "Orange", "Apple", "Mango"];
+    var insertSurname = prompt('Insert your surname:');
+    surname.push(insertSurname);
+    surname.sort();
+    var index;
+    for (var i = 0; i < surname.length; i++) {
+      if (surname[i] == insertSurname) {
+        let index = i + 1; // posizione umana
+      }
+      console.log(surname[i]);
+    }
+    console.log(index,insertSurname);
+
+    </script>
+  </body>
+
+</html>
